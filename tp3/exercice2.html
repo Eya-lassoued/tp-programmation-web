@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Mon premier formulaire</h1>
+    <form method=" post">
+      <fieldset>
+        <legend>vos donner personnelle</legend>
+        <label for="name"> name:</label>
+        <input
+          type="text"
+          id="name"
+          name="user_name"
+          placeholder="votre nom "
+          required
+        />
+        <br />
+        <label for="prenom">prenom</label>
+        <input
+          type="text"
+          id="prenom"
+          name="user_prenom"
+          placeholder="votre prenom "
+        /><br />
+        <label for="date ">date </label>
+        <input
+          type="date"
+          id="date"
+          name="user_date"
+          value="2000-01-01"
+        /><br />
+        <fieldset>
+          <legend>lieu de naissance</legend>
+          <input
+            type="radio"
+            id="city1"
+            name="birth_place"
+            value="seine saint denis"
+          />
+          <label for="city1">seine saint denis</label><br />
+          <input
+            type="radio"
+            id="city2"
+            name="birth_place"
+            value="reste du monde "
+          />
+          <label for="city2">reste du monde </label><br />
+        </fieldset>
+        <fieldset>
+          <legend>option NSL au bac</legend>
+          <input type="radio" id="nsl1" name="nsl_option" value="oui" />
+          <label for="nsl1">oui</label>
+          <input type="radio" id="nsl2" name="nsl_option" value="non" />
+          <label for="nsl2">non</label><br />
+        </fieldset>
+        <label for="adress-postale">adresse postale</label>
+        <textarea
+          name="adress-postale "
+          id="adress-postale"
+          placeholder="votre adress "
+        ></textarea>
+        <br />
+        <label for="codepostale">codepostale </label>
+        <input
+          type="number"
+          name="codepostale"
+          id="codepostale"
+          placeholder="93000"
+          max="99999"
+          min="10000"
+        />
+        <br />
+        <label for="adress-electronique">adresse electronique</label>
+        <input
+          type="email"
+          name="adress-electronique"
+          id="adress-electronique"
+          placeholder="votre email "
+        />
+        <br />
+        <label for="pweb ">page personnelle</label>
+        <input type="url" name="pweb" id="pweb" placeholder="votre page web " />
+        <br />
+        <label for="tel">telephone portable</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="06 12 34 56 78"
+          pattern="(24/97)[0-9]{6}"
+        />
+        <br />
+        <label for="semestre">semestre:</label>
+        <select name="semestre" id="semestre">
+          <option value="S1">S1</option>
+          <option value="S2">S2</option>
+          <option value="S3">S3</option>
+          <option value="S4">S4</option>
+          <option value="S5">S5</option>
+          <option value="S6" selected>S6</option>
+        </select>
+        <br />
+        <label for="nvhtml">niveau en HTML:</label>
+        <input
+          type="range"
+          name="nvhtml"
+          id="nvhtml"
+          min="0"
+          max="20"
+          step="2"
+          value="8"
+        />
+        <br />
+        <fieldset>
+          <legend>connaissances en informatique</legend>
+          <input
+            type="checkbox"
+            id="c1"
+            name="connaissance"
+            value="html"
+            checked
+          />
+          <label for="c1">html</label>
+          <input type="checkbox" id="c2" name="connaissance" value="css" />
+          <label for="c2">css</label>
+          <input type="checkbox" id="c3" name="connaissance" value="js" />
+          <label for="c3">java </label>
+        </fieldset>
+        <br />
+        <button>Envoyer</button>
+        <button>renitialiser</button>
+      </fieldset>
+      <p>formulaire realiser dan le cadre du cour du developpement web</p>
+    </form>
+  </body>
+</html>

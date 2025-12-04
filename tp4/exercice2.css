@@ -1,0 +1,24 @@
+h1,h2,h3,h4,h5,h6,.fleur,#cadre {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #ab2aa0;
+    text-align: left;
+    border-bottom: 3px solid #4A90E2;
+    padding-bottom: 5px;
+}   
+section p {
+/* Styles appliqués uniquement aux paragraphes dans une section */
+color: blueviolet;
+line-height: 1.5;
+margin: 10px 0;
+}
+p:nth-child(3) {
+color: red;
+}
+
+p + h1.kiwi + p strong {
+color :aqua
+}
+
+img[alt*="logo"]{
+border: 1px solid red;
+}

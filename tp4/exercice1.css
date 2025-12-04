@@ -1,0 +1,46 @@
+/* Styles pour le corps du document */
+body {
+    background-color: #dfd1d6;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: normal;
+}
+
+/* Styles pour les titres H1 */
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    color: #d02763;
+    border: 2px dotted #d02763;
+    border-radius: 10px;
+
+}
+
+/* Élimination des lignes horizontales */
+hr {
+    display: none;
+}
+
+/* Styles pour les titres H3 */
+h3 {
+    background-color: white;
+    color: #0a9bda;
+
+}
+
+/* Styles pour les titres des listes de définitions */
+dt {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Styles pour les images */
+img {
+    width: 100px;
+    border: 1px solid #000;
+}
+
+/* Alignement des liens */
+a[href="#haut"], a[href="#bas"] {
+    display: block;
+    text-align: right;
+}

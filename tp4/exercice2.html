@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP4 - Exercice 2 - Sélecteurs avancés</title>
+    <link rel="stylesheet" href="exercice2.css" />
+  </head>
+  <body>
+    <h1>TP4 - Exercice 2 : Les sélecteurs avancés</h1>
+    <h2>TP4 - Exercice 2 : Les sélecteurs avancés</h2>
+    <h3>TP4 - Exercice 2 : Les sélecteurs avancés</h3>
+
+    <section>
+      <p>Hello</p>
+    </section>
+    <div class="question">
+      <h3>Question 1 : Sélecteur de groupe</h3>
+      <p id="cadre">
+        Comment cibler à la fois tous les titres principaux, tous les éléments
+        de la classe "fleurs", ainsi que l'élément dont l'identifiant est
+        "cadre" ?
+      </p>
+      <div class="code">
+        h1, h2, h3, .fleurs, #cadre { /* Styles appliqués à tous ces éléments */
+        }
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>Question 2 : Sélecteur descendant</h3>
+      <p>
+        Comment cibler uniquement les éléments &lt;p&gt; contenus au sein d'un
+        élément &lt;section&gt; ?
+      </p>
+      <div class="code">
+        section p { /* Styles appliqués uniquement aux paragraphes dans une
+        section */ }
+      </div>
+    </div>
+
+    <div class="fleurs">
+      <h3>Question 3 : Sélecteur :nth-child()</h3>
+      <p>
+        Colorer le texte du troisième paragraphe en rouge sans modifier le code
+        HTML.
+      </p>
+      <div class="code">p:nth-child(3) { color: red; }</div>
+      <p>Ou le sélecteur :nth-of-type() :</p>
+      <div class="code">p:nth-of-type(3) { color: red; }</div>
+    </div>
+
+    <div class="question">
+      <h3>Question 4 : Sélecteur adjacent</h3>
+      <p>
+        Écrire le code HTML correspondant à la règle CSS suivante : p + hi.kivi
+        + p strong
+      </p>
+      <div class="code">
+        &lt;p&gt;Premier paragraphe&lt;/p&gt; &lt;hi class="kivi"&gt;Élément hi
+        avec classe kivi&lt;/hi&gt; &lt;p&gt;Deuxième paragraphe
+        &lt;strong&gt;texte en gras ciblé&lt;/strong&gt;&lt;/p&gt;
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>Question 5 : Sélecteur d'attribut</h3>
+      <p>Que signifie la syntaxe suivante ? img[alt*="logo"]</p>
+      <p>
+        Ce sélecteur cible toutes les images (&lt;img&gt;) dont l'attribut "alt"
+        contient la sous-chaîne "logo".
+      </p>
+      <div class="example">
+        <p>Exemples :</p>
+        <div class="code">
+          &lt;img src="im1.png" alt="Mon logo"&gt; /* Ciblé */ &lt;img
+          src="im1.jpg" alt="logo de l'entreprise"&gt; /* Ciblé */ &lt;img
+          src="im1.jpg" alt="photo"&gt; /* Non ciblé */
+        </div>
+      </div>
+    </div>
+
+    <p>Premier paragraphe</p>
+    <h1 class="kiwi">Élément hi avec classe kivi</h1>
+    <p>Deuxième paragraphe <strong>texte en gras ciblé</strong></p>
+
+    <img
+      src="Capture d'écran 2025-02-26 094106.png"
+      alt="Mon logo"
+      height="50px"
+      width="50"
+    />
+    /* Ciblé */ <img src="im1.png" alt="logo de l'entreprise" /> /* Ciblé */
+    <img src="im1.png" alt="photo" /> /* Non ciblé */
+  </body>
+</html>

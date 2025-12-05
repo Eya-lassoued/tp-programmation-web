@@ -13,7 +13,7 @@ html { font-size: 62.5%;
     scroll-behavior: smooth;
 scroll-padding-top: 6rem; 
 overflow-x:hidden ;}
-header { position: inherit;
+header { position: fixed;
 top: 0;
 left: 0;   
 right: 0;
@@ -24,14 +24,15 @@ align-items: flex-start;
 justify-content: space-between;
 z-index: 1000;
 box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-
+B     
 } 
 header .logo { font-size: 2.5rem;
 color: #333;    
 font-weight: bolder; 
 }
 header .logo span { color: var(--pink); }
-header .navbar { display: flex; align-items: center; }
+header .navbar { display: fixed
+    ; align-items: center; }
 header .navbar a{  font-size: 2rem;
     padding: 0 1.5rem;
     color: #666;
@@ -42,3 +43,148 @@ header .navbar a:hover { color: var(--pink); }
 /* style SVG icons inside .icon (they use fill="currentColor") */
 header .icon svg { width: 3rem; height: 3rem; color: #666; margin-left: 2rem; }
 header .icon svg:hover { color: var(--pink); }
+ section { padding: 8rem 9% 2rem; }
+ .home {
+            min-height: 100vh;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), 
+                        url('Hibiscus flower background.jpeg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 60px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+ 
+ .home .content { 
+    max-width: 40rem; } 
+ .home .content h3 { font-size: 6rem; color: #333  ; }
+ .home .content span  { font-size: 3.5rem; color: #666; padding: 1rem 0; line-height: 1.8; }
+ .home .content a { display: inline-block; margin-top: 1rem; padding: 1rem 3rem; font-size: 2rem; color: #fff; background-color: var(--pink); border-radius: .5rem; }
+ .home .content a:hover { background-color: #d81b60; }
+ .home .image { flex:1 1 45rem; text-align: center; }
+ .home .image img { max-width: 100%; }
+ .btn   { display: inline-block;
+     margin-top: 1rem; 
+     padding: 1.5rem 4rem; 
+     font-size: 2rem;
+      color: #fff;
+       background-color: #333;
+        border-radius: .5rem;
+        cursor: pointer; }
+ .btn:hover { background-color:#333; }
+ .headding { text-align: center;
+    font-size: 4rem;
+     color: #333;
+      padding: 1rem; 
+    background:rgba(255, 51,153, rgba(0,0,0,.1)) ;}
+.headding span { color: var(--pink); }
+.about .row { display: flex;
+    align-items: center;
+     gap: 2rem; 
+     flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+
+ }
+ .about .row .video_container { flex:1 1 45rem;
+position: relative; }
+    .about .row .video_container video { width: 100%;
+        border:1.5 rem solid #fff;
+        border-radius: .5rem;
+        height: 100%;
+        box-shadow:0 .5rem 1rem rgba(0,0,0,.1); }
+    .about .row .content { flex:1 1 45rem; }
+    .about .row .content h3 { font-size: 3rem; color: #333; padding-bottom: 1rem; }
+    .about .row .content p { font-size: 1.5rem; color: #666; line-height: 1.8; padding-bottom: 1rem; }
+    .about .row .content .btn { background-color: var(--pink); }
+    .about .row .content .btn:hover { background-color: #d81b60; }
+
+    /* Titre principal */
+#main-title {
+    text-align: center;
+    font-family: Georgia, serif;
+    margin-top: 30px;
+    color: #b30059;
+}
+
+/* Tableau principal */
+#flower-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* En-tête du tableau */
+.header-cell {
+    background-color: #f7d7e8;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+
+/* Lignes du produit */
+.product-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-row td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Image */
+.image-cell img {
+    width: 80px;
+    border-radius: 8px;
+}
+/* Titre */
+#info-title {
+    text-align: center;
+    font-family: Georgia, serif;
+    margin: 30px 0;
+    color: #7a0052;
+}
+
+/* Tableau */
+#info-table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* En-tête du tableau */
+.header-cell {
+    background-color: #ffd6ec;
+    font-size: 18px;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+/* Lignes */
+.info-row:nth-child(even) {
+    background-color: #faf9f9;
+}
+
+/* Cellules */
+.label-cell, .value-cell {
+    border: 1px solid #ccc;
+    padding: 14px;
+    font-size: 16px;
+}
+
+/* Colonne gauche */
+.label-cell {
+    font-weight: bold;
+    background-color: #ffeef7;
+}
+
+/* Colonne droite */
+.value-cell {
+    text-align: left;
+}
